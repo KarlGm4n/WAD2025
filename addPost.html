@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Post</title>
+    <link rel="stylesheet" href="./res/css/style.css">
+  </head>
+  <body>
+
+    <header>
+      <a class="home-btn" href="index.html">Home</a>
+      <a class="avatar" href="#">
+        <img src="res/images/default_avatar.jpg" alt="Avatar" class="avatar-img">
+      </a>
+    </header>
+
+    <div class="post-box">
+      <div class="form-group">
+          <label for="post-body">Post Body</label>
+          <textarea id="post-body" placeholder="Write your post here..." maxlength="500"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="file">Select File</label>
+        <input type="file" id="file">
+      </div>
+
+      <button onclick="location.href='index.html'">Create Post</button>
+    </div>
+
+  </body>
+</html>

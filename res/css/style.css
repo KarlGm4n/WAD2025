@@ -88,6 +88,7 @@ footer {
   flex-direction: column;
 }
 
+
 .content-panel {
   flex: 1;
   border-radius: 18px;
@@ -154,10 +155,10 @@ footer {
   background: rgb(255, 255, 255);
   text-align: center;
   margin-top: 100px;
-  padding: 30px;
+  padding: 30px 16px;
   border-radius: 10px;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-  width: 350px;
+  width: 40%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -165,11 +166,17 @@ footer {
 .form-group {
   margin-bottom: 20px;
 }
+.form-group > label {
+  font-style: italic;
+}
 
 label {
   display: block;
   margin-bottom: 10px;
   font-weight: bold;
+}
+label ~ input[type="file"] {
+  font-size: 0.9em;
 }
 
 input[type="text"] {
@@ -200,7 +207,7 @@ button:hover {
 }
 
 textarea {
-  width: 100%;
+  width: 90%;
   height: 120px;
   padding: 10px;
   border: 1px solid #ccc;
@@ -228,9 +235,18 @@ ul {
   font-size: .99em;
 }
 
+a + p {
+  color: gray;
+  font-style: sans-serif;
+}
+
 #footer-p {
   margin: 0;
   font-size: 1.5em;
+}
+
+#main-content {
+  padding-bottom: 32px;
 }
 
 @media (max-width: 900px) {

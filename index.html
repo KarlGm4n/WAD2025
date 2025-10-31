@@ -3,6 +3,7 @@
 
 <head>
   <link rel="stylesheet" href="res/css/style.css">
+  <script src="res/js/script.js"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Home</title>
@@ -17,102 +18,28 @@
         <a href="addPost.html">addPost</a>
       </nav>
       <div class="nav-right">
-          <a href="login.html"><img src="res/images/default_avatar.jpg" alt="Avatar" class="avatar-img"></a>
+        <div class="dropdown">
+          <img src="res/images/default_avatar.jpg" alt="Avatar" class="avatar-img" id="userAvatar">
+          <div class="dropdown-content" id="userMenu">
+            <p><strong>John Doe</strong></p>
+            <p>john.doe@example.com</p>
+            <hr>
+            <a href="login.html">Logout</a>
+          </div>
+        </div>
       </div>
     </div>
   </header>
 
   <div class="main-layout">
     <aside class="side-panel left-panel"></aside>
-    <section class="content-panel">
-
-      <div class="post">
-        <div class="post-header">
-          <img src="res/images/default_avatar.jpg" alt="Avatar" class="post-avatar">
-          <div class="post-meta">
-            <span class="post-date">Jan 14, 2025</span>
-          </div>
-        </div>
-        <div class="post-content">
-          <img src="res/images/informaatika.jpg" alt="Example" class="post-image">
-          <p>Aastal 2024 avaldasid sisseastumis soovi Tartu Ülikooli informaatika erialale 430 inimest.</p>
-        </div>
-        <div class="post-footer">
-          <img src="res/images/like.png" alt="Like" class="like-icon">
-        </div>
-      </div>
-
-      <div class="post">
-        <div class="post-header">
-          <img src="res/images/default_avatar.jpg" alt="Avatar" class="post-avatar">
-          <div class="post-meta">
-            <span class="post-date">Jan 1, 2024</span>
-          </div>
-        </div>
-        <div class="post-content">
-          <img src="res/images/Tartu-2024.jpg" alt="Example" class="post-image">
-          <p>Algas kultuuripealinna aasta Tartu 2024.</p>
-        </div>
-        <div class="post-footer">
-          <img src="res/images/like.png" alt="Like" class="like-icon">
-        </div>
-      </div>
-
-      <div class="post">
-        <div class="post-header">
-          <img src="res/images/default_avatar.jpg" alt="Avatar" class="post-avatar">
-          <div class="post-meta">
-            <span class="post-date">Feb 24, 2022</span>
-          </div>
-        </div>
-        <div class="post-content">
-          <img src="res/images/ukr.jpg" alt="Example" class="post-image">
-          <p>Ukraina välisminister Dmõtro Kuleba teatas, et Venemaa on alustanud Ukraina vastu täiemõõdulist sissetungi.</p>
-        </div>
-        <div class="post-footer">
-          <img src="res/images/like.png" alt="Like" class="like-icon">
-        </div>
-      </div>
-
-      <div class="post">
-        <div class="post-header">
-          <img src="res/images/default_avatar.jpg" alt="Avatar" class="post-avatar">
-          <div class="post-meta">
-            <span class="post-date">Mar 12, 2020</span>
-          </div>
-        </div>
-        <div class="post-content">
-          <img src="res/images/eriolukord.jpg" alt="Example" class="post-image">
-          <p>Tallinn, Stenbocki maja, 12. märts 2020 – Valitsus kuulutas seoses koroonaviiruse pandeemilise levikuga maailmas ja viiruse tõenäolise Eesti-sisese leviku laienemisega riigis välja eriolukorra.</p>
-        </div>
-        <div class="post-footer">
-          <img src="res/images/like.png" alt="Like" class="like-icon">
-        </div>
-      </div>
-
-      <div class="post">
-        <div class="post-header">
-          <img src="res/images/default_avatar.jpg" alt="Avatar" class="post-avatar">
-          <div class="post-meta">
-            <span class="post-date">Jan 27, 2020</span>
-          </div>
-        </div>
-        <div class="post-content">
-          <img src="res/images/delta.jpg" alt="Example" class="post-image">
-          <p>Kolmapäeval, 29. jaanuaril kell 12 avatakse Tartu Ülikooli Delta keskus, mis on põhjamaade üks moodsamaid digitehnoloogilise, analüütilise ja majandusmõtte kandjaid.</p>
-        </div>
-        <div class="post-footer">
-          <img src="res/images/like.png" alt="Like" class="like-icon">
-        </div>
-      </div>
-    </section>
+    <section class="content-panel" id="postsContainer"></section>
     <aside class="side-panel right-panel"></aside>
   </div>
 
   <footer>
     <p id="footer-p">Footer</p>
   </footer>
-
 </body>
 
 </html>

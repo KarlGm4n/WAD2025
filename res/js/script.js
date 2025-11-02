@@ -1,5 +1,9 @@
 async function loadPosts() {
   try {
+    //HW2 task 3 endpoint
+    //const response = await fetch('https://www.jsonkeeper.com/b/BMBO2');
+
+    //HW2 task 5 local file
     const response = await fetch('res/json/posts.json');
     const posts = await response.json();
 
@@ -19,7 +23,7 @@ async function loadPosts() {
           </div>
         </div>
         <div class="post-content">
-          <img src="${post.image}" alt="Post image" class="post-image">
+          <img src="res/images/${post.image}" alt="Post image" class="post-image">
           <p>${post.content}</p>
         </div>
         <div class="post-footer">

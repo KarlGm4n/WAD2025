@@ -196,7 +196,7 @@ input[type="file"] {
   width: 100%;
 }
 
-button {
+#styledBtn {
   width: 100%;
   padding: 12px;
   background: #333;
@@ -208,7 +208,7 @@ button {
   transition: background 0.3s;
 }
 
-button:hover {
+#styledBtn:hover {
   background: #555;
 }
 

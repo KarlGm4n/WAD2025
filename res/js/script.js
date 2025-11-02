@@ -1,6 +1,6 @@
 async function loadPosts() {
   try {
-    const response = await fetch('res/json/posts.json');
+    const response = await fetch('https://api.npoint.io/790959870578ea4481ce');
     const posts = await response.json();
 
     const container = document.getElementById('postsContainer');

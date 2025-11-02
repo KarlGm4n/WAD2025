@@ -2,39 +2,49 @@
 <html lang="en">
 
 <head>
+  <link rel="stylesheet" href="res/css/style.css">
+  <script src="res/js/script.js"></script>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Add Post</title>
-  <link rel="stylesheet" href="./res/css/style.css">
 </head>
 
 <body>
-
-  <header>
+<header>
     <div class="header-content">
-      <nav class="nav-left">
-        <a href="index.html">Home</a>
-        <span class="nav-separator">|</span>
-        <a href="addPost.html">addPost</a>
-      </nav>
-      <div class="nav-right">
-          <a href="login.html"><img src="res/images/default_avatar.jpg" alt="Avatar" class="avatar-img"></a>
-      </div>
+        <nav class="nav-left">
+            <a href="index.html">Home</a>
+            <span class="nav-separator">|</span>
+            <a href="addPost.html">addPost</a>
+        </nav>
+        <div class="nav-right">
+            <div class="dropdown">
+                <img src="res/images/default_avatar.jpg" alt="Avatar" class="avatar-img" id="userAvatar">
+                <div class="dropdown-content" id="userMenu">
+                    <p><strong>John Doe</strong></p>
+                    <p>john.doe@example.com</p>
+                    <hr>
+                    <a href="login.html">Logout</a>
+                </div>
+            </div>
+        </div>
     </div>
-  </header>
+</header>
 
   <div class="post-box">
-    <div class="form-group">
-      <label for="post-body">Post Body</label>
-      <textarea id="post-body" placeholder="Write your post here..." maxlength="500"></textarea>
-    </div>
+      <form action="index.html" method="post" class="input">
+          <div class="form-group">
+              <label for="post-body">Post Body</label>
+              <textarea id="post-body" placeholder="Write your post here..." maxlength="500"></textarea>
+          </div>
 
-    <div class="form-group">
-      <label for="file">Select File</label>
-      <input type="file" id="file">
-    </div>
+          <div class="form-group">
+              <label for="file">Select File</label>
+              <input type="file" id="file">
+          </div>
 
-    <button onclick="location.href='index.html'">Create Post</button>
+          <input type="submit" value="Create Post" id="styledBtn">
+      </form>
   </div>
 
 </body>

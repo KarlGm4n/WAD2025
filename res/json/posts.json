@@ -2,61 +2,61 @@
   {
     "author": "John Doe",
     "date": "2025-01-14",
-    "image": "res/images/informaatika.jpg",
+    "image": "informaatika.jpg",
     "content": "Aastal 2024 avaldasid sisseastumis soovi Tartu Ülikooli informaatika erialale 430 inimest."
   },
   {
     "author": "Peeter Tamm",
     "date": "2025-01-01",
-    "image": "res/images/newyear.jpg",
+    "image": "newyear.jpg",
     "content": "Head uut aastat 2025!"
   },
   {
     "author": "Jane Sepp",
     "date": "2024-01-01",
-    "image": "res/images/Tartu-2024.jpg",
+    "image": "Tartu-2024.jpg",
     "content": "Algas kultuuripealinna aasta Tartu 2024."
   },
   {
     "author": "Mari Koppel",
     "date": "2023-11-20",
-    "image": "res/images/cboe.jpg",
+    "image": "cboe.jpg",
     "content": "Tudengid osalesid Tartus hackathonil."
   },
   {
     "author": "Laura Laan",
     "date": "2023-09-01",
-    "image": "res/images/ut.jpg",
+    "image": "ut.jpg",
     "content": "Tartu Ülikool alustas uut õppeaastat."
   },
   {
     "author": "Markus Kask",
     "date": "2022-04-15",
-    "image": "res/images/kevad.jpg",
+    "image": "kevad.jpg",
     "content": "Kevad saabus Eestisse täies hiilguses."
   },
   {
     "author": "Anna Kask",
     "date": "2022-02-24",
-    "image": "res/images/ukr.jpg",
+    "image": "ukr.jpg",
     "content": "Ukraina välisminister Dmõtro Kuleba teatas, et Venemaa on alustanud Ukraina vastu täiemõõdulist sissetungi."
   },
   {
     "author": "Martin Saar",
     "date": "2021-06-01",
-    "image": "res/images/suvi.jpg",
+    "image": "suvi.jpg",
     "content": "Algas soe suvi Tartus."
   },
   {
     "author": "Karl Mets",
     "date": "2020-03-12",
-    "image": "res/images/eriolukord.jpg",
+    "image": "eriolukord.jpg",
     "content": "Valitsus kuulutas seoses koroonaviiruse levikuga Eestis välja eriolukorra."
   },
   {
     "author": "Liis Pärn",
     "date": "2020-01-27",
-    "image": "res/images/delta.jpg",
+    "image": "delta.jpg",
     "content": "Avati Tartu Ülikooli Delta keskus."
   }
 ]

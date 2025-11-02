@@ -1,6 +1,14 @@
 async function loadPosts() {
   try {
+<<<<<<< HEAD
     const response = await fetch('https://api.npoint.io/790959870578ea4481ce');
+=======
+    //HW2 task 3 endpoint
+    //const response = await fetch('https://www.jsonkeeper.com/b/BMBO2');
+
+    //HW2 task 5 local file
+    const response = await fetch('res/json/posts.json');
+>>>>>>> 0ecfd957416debb46d3356a7cbb1950d601d7062
     const posts = await response.json();
 
     const container = document.getElementById('postsContainer');
@@ -19,7 +27,7 @@ async function loadPosts() {
           </div>
         </div>
         <div class="post-content">
-          <img src="${post.image}" alt="Post image" class="post-image">
+          <img src="res/images/${post.image}" alt="Post image" class="post-image">
           <p>${post.content}</p>
         </div>
         <div class="post-footer">

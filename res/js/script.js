@@ -1,14 +1,10 @@
 async function loadPosts() {
   try {
-<<<<<<< HEAD
-    const response = await fetch('https://api.npoint.io/790959870578ea4481ce');
-=======
     //HW2 task 3 endpoint
     //const response = await fetch('https://www.jsonkeeper.com/b/BMBO2');
 
     //HW2 task 5 local file
     const response = await fetch('res/json/posts.json');
->>>>>>> 0ecfd957416debb46d3356a7cbb1950d601d7062
     const posts = await response.json();
 
     const container = document.getElementById('postsContainer');
